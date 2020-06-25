@@ -1,0 +1,10 @@
+<!-- #6 -->
+<!-- Ajustar html para olhar para o observable darkmode -->
+<div [ngClass]="{ darkmode: (darkModeObservable | async).dark }">
+  <div class="text-center">
+    <img width="400" alt="Logo" src="assets/ngrx.svg" />
+    <br/>
+    <br/>
+    <input class="btn" type="button" value="{{ (darkModeObservable | async).dark ? 'Acender' : 'Apagar' }} as luzes" (click)="darkModeToggle()" />
+  </div>
+</div>

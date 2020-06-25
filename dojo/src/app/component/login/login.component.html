@@ -1,0 +1,22 @@
+<div style="text-align: center;">
+    <h1>
+      Bem vindo ao Redux Dojo!
+    </h1>
+  </div>
+  
+  <div class="text-center">
+    <img width="200" alt="Logo" src="assets/ngrx.svg" />
+    <br />
+    <br />
+    <div class="col-md-4 offset-md-4">
+      <h1 class="h3 mb-3 font-weight-normal">Entrar</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input #user type="user" id="inputUser" class="form-control" placeholder="Usuário"/>
+      <br />
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input #password type="password" id="inputPassword" class="form-control" placeholder="Senha"/>
+      <br />
+    <button class="btn btn-lg btn-secondary btn-block" type="submit" (click)="auth(user.value, password.value)">Entrar</button>
+    </div>
+  </div>
+  
